@@ -1,0 +1,76 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (arena.cpp:184), pid=27140, tid=21932
+#
+# JRE version: Java(TM) SE Runtime Environment (18.0.2.1+1) (build 18.0.2.1+1-1)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (18.0.2.1+1-1, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dfile.encoding=UTF-8 --module-path=C:\Users\Ruthvik Bangera\Desktop\elec demo\Electricity-Billing-System\build\classes electricity.billing.system.Project
+
+Host: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx  , 8 cores, 5G,  Windows 11 , 64 bit Build 22621 (10.0.22621.963)
+Time: Sun Jan  8 13:37:34 2023 India Standard Time elapsed time: 39.015167 seconds (0d 0h 0m 39s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001ffdf427e20):  JavaThread "C1 CompilerThread0" daemon [_thread_in_native, id=21932, stack(0x0000007f31400000,0x0000007f31500000)]
+
+
+Current CompileTask:
+C1:  39015 1035       3      
+[error occurred during error reporting (printing current compile task), id 0xe0000001, Out of Memory Error (s\open\src\hotspot\share\memory\arena.cpp:184)]
+
+Stack: [0x0000007f31400000,0x0000007f31500000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6993aa]
+V  [jvm.dll+0x7f46dd]
+V  [jvm.dll+0x7f5fee]
+V  [jvm.dll+0x7f66a3]
+V  [jvm.dll+0x25cf1f]
+V  [jvm.dll+0xb8c2f]
+V  [jvm.dll+0xb8fa5]
+V  [jvm.dll+0x760edc]
+V  [jvm.dll+0x760fc9]
+V  [jvm.dll+0x64eee9]
+V  [jvm.dll+0x2435e6]
+V  [jvm.dll+0x243b67]
+V  [jvm.dll+0x7f4578]
+V  [jvm.dll+0x7f5fee]
+V  [jvm.dll+0x7f66a3]
+V  [jvm.dll+0x25cf1f]
+V  [jvm.dll+0xb8c2f]
+V  [jvm.dll+0xb8fa5]
+V  [jvm.dll+0x18143f]
+V  [jvm.dll+0x1861d9]
+V  [jvm.dll+0x17254e]
+V  [jvm.dll+0x160490]
+V  [jvm.dll+0x148f67]
+V  [jvm.dll+0x1488cf]
+V  [jvm.dll+0x148b26]
+V  [jvm.dll+0x147f9a]
+V  [jvm.dll+0x149c81]
+V  [jvm.dll+0x23ee0a]
+V  [jvm.dll+0x23d0f5]
+V  [jvm.dll+0x7a6dd1]
+V  [jvm.dll+0x7a120a]
